@@ -1,0 +1,30 @@
+GET http://localhost:5049/games
+
+###
+GET http://localhost:5049/games/5
+
+###
+POST http://localhost:5049/games
+Content-Type: application/json
+
+{
+    "name":"Minecraft",
+    "genre":"Kids and family",
+    "price":19.99,
+    "releaseDate": "2011-11-18"
+}
+
+
+###
+PUT http://localhost:5049/games/5
+Content-Type: application/json
+
+{
+  "name": "Street Figter II - Updated",
+  "genre": "Fighting Sport",
+  "price": 88.99,
+  "releaseDate": "2021-09-30"
+}
+
+###
+DELETE http://localhost:5049/games/5
